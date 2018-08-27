@@ -37,6 +37,7 @@ public class MainActivity extends BaseActivity implements LoadMoreData {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Check Internet
         if (!Utilities.isInternetConnected(this)) {
             Toast.makeText(this, getResources().getString(R.string.no_internet), Toast.LENGTH_LONG).show();
             return;
